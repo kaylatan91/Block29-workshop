@@ -5,7 +5,6 @@ import './App.css'
 
 
 export default function App() {
- 
 
   return (
     <>
@@ -21,7 +20,7 @@ export default function App() {
     <div id="main-section">
       <Routes>
         <Route path="/AllPlayers" element={<AllPlayers />} />
-        <Route path="/SinglePlayer" element={<SinglePlayer />} />
+        <Route path="/SinglePlayer/:selectedPlayerId" element={<SinglePlayer />} />
         {/* <Route path="/" element={<Home />} /> */}
       </Routes>
     </div>
